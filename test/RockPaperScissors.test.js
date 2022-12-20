@@ -21,6 +21,7 @@ describe("RockPaperScissors", function() {
         [acc1] = await ethers.getSigners()
         const RPS = await ethers.getContractFactory("RockPaperScissors", acc1)
         rps = await RPS.deploy()
+
         await rps.deployed()
     })
 
